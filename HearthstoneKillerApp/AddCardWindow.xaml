@@ -1,0 +1,25 @@
+﻿<Window x:Class="HearthstoneKillerApp.AddCardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HearthstoneKillerApp"
+        mc:Ignorable="d"
+        Title="Add Card" Height="269.393" Width="305.683" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="AddCardWindow_Loaded">
+    <Grid Margin="0,0,0,0">
+        <TextBox x:Name="tbName" Height="23" Margin="116,171,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="80" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="116,199,0,0" VerticalAlignment="Top" Width="80" Height="23" Click="btnCreate_Click"/>
+        <ComboBox x:Name="cbType" HorizontalAlignment="Left" Margin="116,34,0,0" VerticalAlignment="Top" Width="80" SelectionChanged="cbType_SelectionChanged"/>
+        <Label Content="Type" HorizontalAlignment="Left" VerticalAlignment="Top" Width="43" Height="26" Margin="35,30,0,0" VerticalContentAlignment="Center" FontWeight="Bold" Foreground="White"/>
+        <ComboBox x:Name="cbClass" HorizontalAlignment="Left" Margin="116,61,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label Content="Class" HorizontalAlignment="Left" Margin="35,58,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" RenderTransformOrigin="0.435,0.281" FontWeight="Bold" Foreground="White"/>
+        <ComboBox x:Name="cbRarity" HorizontalAlignment="Left" Margin="116,88,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label Content="Rarity" HorizontalAlignment="Left" VerticalAlignment="Top" Width="43" Height="26" Margin="35,84,0,0" VerticalContentAlignment="Center" FontWeight="Bold" Foreground="White"/>
+        <ComboBox x:Name="cbManacost" HorizontalAlignment="Left" Margin="116,115,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label Content="Mana Cost" HorizontalAlignment="Left" Margin="35,112,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" RenderTransformOrigin="0.435,0.281" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="35,168,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" RenderTransformOrigin="0.435,0.281" FontWeight="Bold" Foreground="White"/>
+        <ComboBox x:Name="cbRace" HorizontalAlignment="Left" Margin="116,141,0,0" VerticalAlignment="Top" Width="80" Loaded="cbRace_Loaded"/>
+        <Label Content="Race" HorizontalAlignment="Left" Margin="35,138,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" RenderTransformOrigin="0.435,0.281" FontWeight="Bold" Foreground="White"/>
+
+    </Grid>
+</Window>
